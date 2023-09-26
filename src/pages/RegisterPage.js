@@ -6,7 +6,7 @@ export default function Register(){
     async function register(ev)
     {   
         ev.preventDefault();
-        const response=await fetch('https://blog-backend-o9hm.onrender.com/register',{
+        const response=await fetch('https://blog-backend-u9sp.onrender.com/register',{
             method:'POST',
             body:JSON.stringify({username,password}),
             headers:{'Content-Type':'application/json'},

@@ -12,7 +12,7 @@ export default function Login(){
     
     async function login(ev){
         ev.preventDefault();
-        const response=await fetch('https://blog-backend-o9hm.onrender.com/login',{
+        const response=await fetch('https://blog-backend-u9sp.onrender.com/login',{
             method:'POST',
             body:JSON.stringify({username,password}),
             headers:{'Content-Type':'application/json'},

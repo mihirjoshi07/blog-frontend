@@ -7,7 +7,7 @@ export default function Header()
   const {setUserInfo,userInfo}=useContext(UserContext);
   useEffect(()=>{
     console.log("header useeefect")
-    fetch('https://blog-backend-o9hm.onrender.com/profile',{
+    fetch('https://blog-backend-u9sp.onrender.com/profile',{
       credentials:'include',
     }).then(response=>{
       response.json().then(userInfo=>{
@@ -21,7 +21,7 @@ export default function Header()
 
 function logout(event) {
   event.preventDefault(); // Prevent the default anchor behavior
-  fetch("https://blog-backend-o9hm.onrender.com/logout", {
+  fetch("https://blog-backend-u9sp.onrender.com/logout", {
     credentials: "include",
     method: "POST"
   })

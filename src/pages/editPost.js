@@ -27,7 +27,7 @@ export default function EditPost()
 
 
     useEffect(()=>{
-       fetch("https://blog-backend-o9hm.onrender.com/post/"+id)
+       fetch("https://blog-backend-u9sp.onrender.com/post/"+id)
         .then(response=>{
             response.json().then(postInfo=>{
                 setTitle(postInfo.title);
@@ -50,7 +50,7 @@ export default function EditPost()
         data.set('file',files?.[0]);
 
         ev.preventDefault();
-        await fetch('https://blog-backend-o9hm.onrender.com/post',{
+        await fetch('https://blog-backend-u9sp.onrender.com/post',{
             method:"PUT",
             body:data,
             credentials:"include",

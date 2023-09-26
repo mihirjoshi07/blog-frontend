@@ -88,7 +88,7 @@ export default function PostPage() {
     // Use an async function to fetch and handle errors
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://blog-backend-o9hm.onrender.com/post/${id}`);
+        const response = await fetch(`https://blog-backend-u9sp.onrender.com/post/${id}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -125,7 +125,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`https://blog-backend-o9hm.onrender.com/${postInfo.img}`} alt="" />
+        <img src={`https://blog-backend-u9sp.onrender.com/${postInfo.img}`} alt="" />
       </div>
       <div className="content" dangerouslySetInnerHTML={{ __html: postInfo.content }} />
     </div>
