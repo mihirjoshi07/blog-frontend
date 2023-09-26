@@ -7,7 +7,7 @@ export default function Header()
   const {setUserInfo,userInfo}=useContext(UserContext);
   useEffect(()=>{
     console.log("header useeefect")
-    fetch('https://blog-backend-o9hm.onrender.com//profile',{
+    fetch('https://blog-backend-o9hm.onrender.com/profile',{
       credentials:'include',
     }).then(response=>{
       response.json().then(userInfo=>{
